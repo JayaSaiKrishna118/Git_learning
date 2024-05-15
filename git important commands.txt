@@ -1,0 +1,34 @@
+----How to change the brnach from the new repository----
+
+1. git clone URL.
+2.git remote add upstream URL.
+3.git remote set-url --push upstream no_push.
+4.git remote -v
+5.git fetch upstream
+6.git checkout -b NAME(that you want to give to that specfic branch) upstream/develop(let's assume it's a develop)
+	final command: git checkout -b develop upstream/develop
+7.git pull.
+
+
+
+----How to change the branch which is already existed ----
+
+1. git status
+2. git statsh
+3. git branch
+4. git checkout BRANCH NAME
+5.git pull
+
+----To build the project----
+
+mvn clean install -Dgpg.skip=true -DskipTests=true
+
+----To raise the PR ----
+
+1. git status
+2. git add PATH
+3. git commit -s -m "This is commot message"
+4. git pull
+5. git push origin
+6. and in Git we can see a button like "create a PR".
+
